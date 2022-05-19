@@ -1,0 +1,29 @@
+# testttttt
+
+import UIKit
+
+class ViewController: UIViewControoler {
+  @IBOutlet var lablHello: UILable!                  // 출력 레이블용 아울렛 변수
+  @IBOutlet var txtName: UITextField!                // 이름 입력용 아울렛 변수
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    // Do any additional setup after loading the view.
+  }
+  
+  @IBAction func btnSend(_ sender: UIButton) {
+  // "Hello, "라는 문자열과 txtName.text의 문자열을 결합하여 lblHello.txt에 넣음
+    lblHello.text = "Hello, " + txtName.text!
+   }
+}
+
+
+
+// @IB로 시작되는 변수나 함수는 인터페이스 빌더와 관련된 변수나 함수라는 것을 의미
+// @IBOutlet은 객체를 소스 코드에서 참조하기 위해 사용하는 키워드이며 주로 색상, 크기, 모양, 선의 두께, 텍스트 내용 등 객체 속성 제어하는 데 사용
+// 변수 선언할 때는 var 키워드 사용
+// UI : User Interface
+// @IBAuction으로 정의된 함수를 액션 함수라 부름
+// 함수 선언할 때는 func 키워드 사용
+// 큰따옴표(", ")안에 들어간 문구를 그대로 문자열로 사용
+// !는 옵셔널 변수의 강제 언래핑 의미
